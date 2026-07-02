@@ -1,0 +1,83 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 38,
+    "spacing": 0,
+
+    "modules-left": [
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "battery",
+        "tray"
+    ],
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-scroll-up": "hyprctl dispatch workspace e-1",
+        "on-scroll-down": "hyprctl dispatch workspace e+1",
+        "active-only": false,
+        "all-outputs": true
+    },
+
+    "hyprland/window": {
+        "format": "// {title}",
+        "max-length": 40,
+        "separate-outputs": true,
+        "rewrite": {
+            "(.*) — Mozilla Firefox": "󰈹 $1",
+            "(.*)": "$1"
+        }
+    },
+
+    "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%a %d %b  %H:%M}",
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "mode": "month",
+            "on-scroll": 1
+        }
+    },
+
+    "pulseaudio": {
+        "format": "vol {volume}%",
+        "format-muted": "[ mute ]",
+        "on-click": "bash /home/aaronlime/.config/hypr/scripts/pavucontrol-toggle.sh",
+        "scroll-step": 5
+    },
+
+    "network": {
+        "format-wifi": "wifi {signalStrength}%",
+        "format-ethernet": "eth",
+        "format-disconnected": "[ no signal ]",
+        "format-linked": "linked",
+        "tooltip-format-wifi": "{essid} — {ipaddr}",
+        "on-click": "nm-connection-editor"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "bat {capacity}%",
+        "format-charging": "chr {capacity}%",
+        "format-plugged": "ac {capacity}%",
+        "format-full": "full",
+        "tooltip-format": "{timeTo}"
+    },
+
+    "tray": {
+        "icon-size": 14,
+        "spacing": 8
+    }
+}

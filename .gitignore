@@ -1,0 +1,22 @@
+# Secrets — never commit
+scripts/quickshell/calendar/.env
+
+# Generated/cache files
+scripts/quickshell/qs_colors.json
+scripts/quickshell/colors.json
+hyprland.conf.save
+
+# Local backup of previous repository metadata
+.git.backup-*/
+
+Antigravity IDE/
+BraveSoftware/
+mozilla/
+systemd/
+pulse/
+discord/
+spotify/
+dconf/
+chromium/
+google-chrome/
+Code - OSS/

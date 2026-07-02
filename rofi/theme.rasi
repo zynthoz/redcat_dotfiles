@@ -1,0 +1,163 @@
+* {
+    background:     rgba(15, 5, 5, 97%);
+    background-alt: rgba(180, 20, 20, 8%);
+    foreground:     rgba(255, 220, 220, 100%);
+    foreground-dim: rgba(255, 180, 180, 50%);
+    accent:         rgba(220, 50, 47, 100%);
+    selected-bg:    rgba(180, 20, 20, 35%);
+    border-col:     rgba(220, 50, 47, 40%);
+
+    background-color:            transparent;
+    normal-background:           transparent;
+    normal-foreground:           var(foreground);
+    alternate-normal-background: transparent;
+    alternate-normal-foreground: var(foreground);
+    selected-normal-background:  var(selected-bg);
+    selected-normal-foreground:  var(foreground);
+    urgent-background:           transparent;
+    urgent-foreground:           var(accent);
+    active-background:           transparent;
+    active-foreground:           var(accent);
+    selected-urgent-background:  var(selected-bg);
+    selected-urgent-foreground:  var(accent);
+    selected-active-background:  var(selected-bg);
+    selected-active-foreground:  var(accent);
+    alternate-urgent-background: transparent;
+    alternate-urgent-foreground: var(accent);
+    alternate-active-background: transparent;
+    alternate-active-foreground: var(accent);
+}
+
+window {
+    width:            620px;
+    padding:          0;
+    border:           1px;
+    border-color:     var(border-col);
+    border-radius:    12px;
+    background-color: var(background);
+    location:         center;
+    y-offset:         -100px;
+}
+
+mainbox {
+    padding: 0;
+    border:  0;
+    spacing: 0;
+}
+
+inputbar {
+    padding:          14px 18px;
+    spacing:          10px;
+    text-color:       var(foreground);
+    background-color: transparent;
+    border:           0px 0px 1px 0px;
+    border-color:     var(border-col);
+    children:         [ "prompt", "entry" ];
+}
+
+prompt {
+    spacing:    0;
+    text-color: var(accent);
+    font:       "Sans 14";
+}
+
+entry {
+    text-color:        var(foreground);
+    cursor:            text;
+    spacing:           0;
+    placeholder-color: var(foreground-dim);
+    placeholder:       "Search...";
+    font:              "Sans 14";
+}
+
+listview {
+    padding:      8px;
+    scrollbar:    false;
+    border:       0;
+    spacing:      2px;
+    fixed-height: false;
+    lines:        8;
+}
+
+element {
+    padding:       10px 12px;
+    cursor:        pointer;
+    spacing:       10px;
+    border:        0;
+    border-radius: 8px;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color:       var(normal-foreground);
+}
+
+element selected.normal {
+    background-color: var(selected-bg);
+    text-color:       var(foreground);
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color:       var(alternate-normal-foreground);
+}
+
+element normal.urgent {
+    background-color: transparent;
+    text-color:       var(urgent-foreground);
+}
+
+element selected.urgent {
+    background-color: var(selected-bg);
+    text-color:       var(accent);
+}
+
+element alternate.urgent {
+    background-color: transparent;
+    text-color:       var(accent);
+}
+
+element normal.active {
+    background-color: transparent;
+    text-color:       var(active-foreground);
+}
+
+element selected.active {
+    background-color: var(selected-bg);
+    text-color:       var(accent);
+}
+
+element alternate.active {
+    background-color: transparent;
+    text-color:       var(accent);
+}
+
+element-text {
+    background-color: transparent;
+    cursor:           inherit;
+    highlight:        inherit;
+    text-color:       inherit;
+    font:             "Sans 13";
+}
+
+element-icon {
+    background-color: transparent;
+    size:             1.5em;
+    cursor:           inherit;
+    text-color:       inherit;
+}
+
+scrollbar {
+    width:  0;
+    border: 0;
+}
+
+message {
+    padding: 10px 18px;
+    border:  0;
+}
+
+textbox {
+    text-color: var(foreground);
+    font:       "Sans 13";
+}

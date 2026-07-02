@@ -1,0 +1,20 @@
+[General]
+LastUsedVersion=210800
+
+[MainWindow]
+MenuBar=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Downloads/dashboard-desktop-actual.png
+File2[$e]=$HOME/Downloads/dashboard-mobile-actual.png
+File3[$e]=$HOME/Downloads/cover-page.png
+File4[$e]=$HOME/wallpaper/splash.jpg
+File5[$e]=$HOME/wallpaper/wallpaper.png
+Name1[$e]=dashboard-desktop-actual.png
+Name2[$e]=dashboard-mobile-actual.png
+Name3[$e]=cover-page.png
+Name4[$e]=splash.jpg
+Name5[$e]=wallpaper.png
+
+[SideBar]
+InformationSplitterSizes=207,246

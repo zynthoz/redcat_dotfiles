@@ -1,0 +1,35 @@
+[[themes]]
+name = "red"
+
+[themes.palette]
+background = "#1a0000"
+foreground = "#ffffff"
+black = "#1a0000"
+red = "#cc0000"
+green = "#cc0000"
+yellow = "#cc0000"
+blue = "#cc0000"
+magenta = "#cc0000"
+cyan = "#cc0000"
+white = "#ffffff"
+bright_black = "#3d0000"
+bright_red = "#ff0000"
+bright_green = "#cc0000"
+bright_yellow = "#ff0000"
+bright_blue = "#cc0000"
+bright_magenta = "#ff0000"
+bright_cyan = "#cc0000"
+bright_white = "#ffffff"
+
+[themes.component_style]
+block_title = { fg = "#c47a7a" }
+border = { fg = "#c47a7a" }
+playback_track = { fg = "#d99090", modifiers = ["Bold"] }
+playback_artists = { fg = "#c47a7a" }
+playback_album = { fg = "#c47a7a" }
+playback_metadata = { fg = "#c47a7a" }
+playback_progress_bar = { bg = "#c47a7a", fg = "#d99090" }
+current_playing = { fg = "#d99090", modifiers = ["Bold"] }
+page_desc = { fg = "#c47a7a" }
+table_header = { fg = "#c47a7a", modifiers = ["Bold"] }
+selection = { bg = "#c47a7a", fg = "#1a0000", modifiers = ["Bold"] }

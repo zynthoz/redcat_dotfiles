@@ -1,0 +1,25 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "color": {
+      "1": "red",
+      "2": "red"
+      }
+  },
+  "display": {
+    "color": {
+      "keys": "red",
+      "title": "red"
+    }
+  },
+  "modules": [
+    "title",
+      { "type": "os", "key": "󰣇" },
+      { "type": "display", "format": "{1}x{2} @ {3}Hz", "key": "󰍹" },
+      { "type": "cpu", "format": "{1} @ {7}", "key": "" },
+      { "type": "gpu", "format": "{2}", "key": "󰾲" },
+      { "type": "memory", "format": "{1} / {2}", "key": "󰍛" },
+      { "type": "disk", "format": "{1} / {2}", "key": "󰋊" },
+      { "type": "custom", "format": "Sophia Venice Santos", "key": "󰗶" }
+  ]
+}
